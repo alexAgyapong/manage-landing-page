@@ -15,6 +15,11 @@ body {
   font-family: "Be Vietnam", Arial, Helvetica, sans-serif;
 }
 
+p {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
 #info-text,
 #main-content-header {
   display: flex;
@@ -26,7 +31,6 @@ body {
 .content-card-header {
   background-color: var(--Very-Pale-Red);
   padding: 0.3rem 1rem;
-
 }
 
 .btn-red {
@@ -35,11 +39,78 @@ body {
 }
 
 .red-badge {
-  padding: .5rem 1.2rem;
+  padding: 0.5rem 1.2rem;
   color: white;
   background-color: var(--Bright-Red);
 }
 
-#card-badge{
+#card-badge {
+}
 
+#testimonials {
+  display: flex;
+  flex-direction: column;
+}
+
+#testimonials > h3 {
+  align-self: center;
+}
+
+.testimonial {
+  margin: 1rem 0;
+}
+
+.testimonial-content {
+  background-color: var(--Vary-Light-Gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-content h5 {
+  margin: 3.2rem 0 0.6rem 0;
+  font-weight: bold;
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: -2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+#footer-header{
+  background-color: var(--Bright-Red);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 40vh;
+}
+
+#footer-header span{
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#testimonials button{
+  margin: 1.8rem auto;
+}
+
+.btn-white{
+  background-color: white;
+  color: var(--Bright-Red);
+  margin: 1rem auto;
+}
+
+#footer-content{
+  background-color: var(--Very-Dark-Blue);
+  color: white;
+  height: 60vh;
 }
